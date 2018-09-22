@@ -1,2 +1,2 @@
-# adolesent
-human-computer interaction/Cognitive control/adolesent
+# adolescent
+human-computer interaction/Cognitive control/adolescent
