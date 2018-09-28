@@ -1,9 +1,15 @@
+% !TEX TS-program = XeLaTeX
 \documentclass[12pt]{book}
-\usepackage{CJK}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{mdframed}
+\usepackage{titletoc}
+%\usepackage{etoolbox}
+\usepackage[colorlinks=blue]{hyperref}
 
+
+\usepackage{CJK}
 \usepackage{geometry}
 \geometry{letterpaper}
-
 
 \usepackage{fontspec, xltxtra, xunicode}
 \defaultfontfeatures{Mapping=tex-text}
@@ -11,17 +17,21 @@
 \XeTeXlinebreaklocale “zh”
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %文章内中文自动换行
 
-\newfontfamily{\K}{SimHei}
+%\newfontfamily{\K}{SimHei}
 \newfontfamily{\H}{Helvetica} %设定新的字体快捷命令
 
 \usepackage{titlesec} % 改变标题样式
+\usepackage{sectsty}
 
-\usepackage{xcolor}
+
+%\chapterfont{\color{blue}}
+\sectionfont{\color{blue}}
+
+
 
 \renewcommand{\contentsname}{目 \quad 录}
 %\renewcommand{\abstractname}{摘 \quad 要}
  \renewcommand{\bibname}{参考文献}
- 
  
 \titleformat{\chapter}[hang]{\huge}{\textbf{第~\thechapter~章}}{0.2cm}{\textbf}
 
@@ -30,42 +40,51 @@
 \date{\today}
 
 
-\begin{document} 
+\begin{document}
 \maketitle
 
 \tableofcontents
 
-%每一章用不同的颜色
-%\begin{enumerate}
-%\item 引言 ：待补充
-%\item 人机强交互环境 ： \textcolor{blue}{蓝色字体}
-%\item 认知控制：\textcolor{purple}{ 紫色字体}
-%\item 在线社交： \textcolor{cyan}{浅蓝色字体}
-%\item 电子游戏： \textcolor{brown}{棕色字体}
-%\item 干预： \textcolor{olive}{橄榄色字体}
-%\end{enumerate}
+\newpage
 
+
+每一章用不同的颜色
+\begin{enumerate}
+\item 引言 ：待补充 ( 黑色)
+\item 人机强交互环境 ： \textcolor{blue}{蓝色字体}
+\item 认知控制： \textcolor{magenta}{ 玫红色字体}
+\item 在线社交：  \textcolor{olive}{橄榄色字体}
+\item 电子游戏： \textcolor{violet}{紫罗兰色字体}
+\item 干预：\textcolor{cyan}{ 浅蓝色字体}
+\end{enumerate}
+
+\color{black}
 \chapter{引言 （待补充）}
 \include{chapters/1引言}
 
-在\cite{bavelieretal2011} 中，Bavelier 等人提出，......
 
-\chapter{人机强交互环境 }
+
+\color{black}
+\chapter{人机强交互环境 （吴敏）
+}
 \include{chapters/2人机强交互环境}
 
-\chapter{认知控制  }
+\color{black}
+\chapter{认知控制  {(宋明)}
+}
 \include{chapters/3认知控制}
 
+\color{black}
 \chapter{在线社交对儿童青少年认知控制的影响}
 \include{chapters/4在线社交}
 
+\color{black}
 \chapter{电子游戏对儿童青少年认知控制的影响}
 \include{chapters/5电子游戏}
 
+\color{black}
 \chapter{干预（待补充 ）}
 \include{chapters/6干预}
-
-
 
 
 \bibliographystyle{unsrt}
