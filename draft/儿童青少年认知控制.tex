@@ -10,6 +10,10 @@
 \usepackage{CJK}
 \usepackage{geometry}
 \geometry{letterpaper}
+\usepackage{graphicx,subfigure}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
 
 \usepackage{fontspec, xltxtra, xunicode}
 \defaultfontfeatures{Mapping=tex-text}
@@ -27,6 +31,7 @@
 %\chapterfont{\color{blue}}
 \sectionfont{\color{blue}}
 
+\graphicspath{{figures/}}
 
 
 \renewcommand{\contentsname}{目 \quad 录}
@@ -50,7 +55,7 @@
 
 每一章用不同的颜色
 \begin{enumerate}
-\item 引言 ：待补充 ( 黑色)
+\item 引言 ：  黑色
 \item 人机强交互环境 ： \textcolor{blue}{蓝色字体}
 \item 认知控制： \textcolor{magenta}{ 玫红色字体}
 \item 在线社交：  \textcolor{olive}{橄榄色字体}
@@ -69,8 +74,9 @@
 }
 \include{chapters/2人机强交互环境}
 
+
 \color{black}
-\chapter{认知控制  {(宋明)}
+\chapter{认知控制  {(宋明、吴敏)}
 }
 \include{chapters/3认知控制}
 
